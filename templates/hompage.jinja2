@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <title>Url Shortner</title>
+    {% endblock %}
+</head>
+<body>
+    <form method="post" action="/url">
+        <label for="fname">Long url:</label><br>
+        <input type="text" id="long_url" name="long_url" placeholder="https://example.com"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
